@@ -1,4 +1,4 @@
-const express         = require('express'); //Framework Express
+const express         = require('express');//Framework Express
 const bodyParser      = require('body-parser'); //Parsea el post para obtener objetos json en el request
 const levelup         = require('levelup'); // Base de datos
 const morgan          = require('morgan'); // Sistema de logging (muestra en la cosa los request)
@@ -6,6 +6,13 @@ const morganjson      = require('morgan-json');
 const apiUsers        = require('./api/users'); //Endpoints relacionados al User model
 
 const app = express();
+app.get("/",(req,res)=>{
+  res.sendFile(__dirname+"/index.html")
+});
+app.use("/static", express.static(__dirname + '/node_modules'));
+app.use("/static", express.static(__dirname + '/assets'));
+
+
 const db  = levelup('./api/users', {valueEncoding: 'json'});
 
 const format = morganjson({
@@ -18,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(morgan(format));
+app.use(express.static('index.html'));
 
 let router = express.Router();
 
