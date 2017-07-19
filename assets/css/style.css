@@ -1,6 +1,56 @@
-
-
-.carrusel{
-  width: 1000%;
-  height: 1000%;
+.container-carrusel, .container-ingresaTelefono{
+  margin-top: 25%;
+  margin-bottom: 25%;
 }
+
+.gris-dark{
+  color: #212121;
+}
+
+.gris{
+  color: #8f8f8f;
+}
+
+.boton-amarillo{
+  background-color: #fbd43b;
+  color: white;
+  padding: 5%;
+  padding-bottom: 3%;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.boton-amarillo{
+  background-color: #8f8f8f;
+  color: white;
+  padding: 5%;
+  padding-bottom: 3%;
+  width: 100%;
+  margin-top: 10%;
+}
+
+
+.input-ingresaTelefono{
+  padding-top: 20%;
+}
+/*
+#contenedorCarrusel{
+  padding-top: 10%;
+  width: 1000px;
+  height: 1000px;
+  border-color: black;
+
+}
+
+.img-carrusel1{
+  padding-top: 40%;
+  width: 40%;
+  height: 40%;
+  border-color: black;
+}
+
+
+.carousel-item--first {
+	background-image: url("../img/icons/icon-people.png");
+}
+*/
