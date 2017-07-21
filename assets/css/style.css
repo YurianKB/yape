@@ -3,8 +3,21 @@
   margin-bottom: 25%;
 }
 
+.container-usar-yape{
+  margin-top: 45%;
+  margin-bottom: 25%;
+}
+
+.body-mostrar-saldo{
+  background-color: #38052a;
+}
+
 .gris-dark{
   color: #212121;
+}
+
+.blanco{
+  color: #FFFFFF;
 }
 
 .gris{
@@ -20,18 +33,28 @@
   margin-top: 10%;
 }
 
-.boton-amarillo{
+.boton-gris{
   background-color: #8f8f8f;
   color: white;
-  padding: 5%;
-  padding-bottom: 3%;
-  width: 100%;
   margin-top: 10%;
 }
 
+.boton-amarillo-pequeño{
+  background-color: #fbd43b;
+  color: white;
+  margin-top: 10%;
+}
 
 .input-ingresaTelefono{
   padding-top: 20%;
+}
+
+.color-verde{
+  color: #00c3a3;
+}
+
+.body-amarillo{
+  background-color: #fbd43b;
 }
 /*
 #contenedorCarrusel{
